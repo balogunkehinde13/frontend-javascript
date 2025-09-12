@@ -27,17 +27,3 @@ function executeWork(employee: Employee): string {
   }
 }
 
-const director: Director = {
-  firstName: "John",
-  lastName: "Doe",
-  workDirectorTasks: () => "Getting to director tasks",
-};
-
-const teacher: Teacher = {
-  firstName: "Jane",
-  lastName: "Smith",
-  workTeacherTasks: () => "Getting to teacher tasks",
-};
-
-console.log(executeWork(director)); // Output: "Getting to director tasks"
-console.log(executeWork(teacher));  // Output: "Getting to teacher tasks"
