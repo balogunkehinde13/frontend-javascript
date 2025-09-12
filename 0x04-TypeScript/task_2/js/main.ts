@@ -13,7 +13,7 @@ interface Teacher {
 type Employee = Director | Teacher;
 
 // ✅ Function: Type Predicate
-function isDirector(employee: Employee): employee is Director {
+export function isDirector(employee: Employee): employee is Director {
   // You can check by the presence of `workDirectorTasks`
   return (employee as Director).workDirectorTasks !== undefined;
 }
