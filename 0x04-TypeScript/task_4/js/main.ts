@@ -4,7 +4,7 @@
 /// <reference path="./subjects/Java.ts" />
 /// <reference path="./subjects/React.ts" />
 
-// Step 1: Create and export constants for each subject
+// Step 1: Create and export instances of each subject
 export const cpp = new Subjects.Cpp();
 export const java = new Subjects.Java();
 export const react = new Subjects.React();
