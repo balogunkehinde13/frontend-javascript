@@ -3,12 +3,7 @@ namespace Subjects {
     experienceTeachingC?: number;
   }
 
-  export class Cpp implements Subject {
-    teacher: Teacher;
-
-    setTeacher(teacher: Teacher): void {
-      this.teacher = teacher;
-    }
+  export class Cpp extends Subject {
     getRequirements(): string {
       return "Here is the list of requirements for Cpp";
     }

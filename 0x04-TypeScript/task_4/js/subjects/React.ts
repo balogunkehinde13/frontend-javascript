@@ -3,12 +3,7 @@ namespace Subjects {
     experienceTeachingReact?: number;
   }
 
-  export class React implements Subject {
-    teacher: Teacher;
-
-    setTeacher(teacher: Teacher): void {
-      this.teacher = teacher;
-    }
+  export class React extends Subject {
     getRequirements(): string {
       return "Here is the list of requirements for React";
     }

@@ -3,12 +3,7 @@ namespace Subjects {
     experienceTeachingJava?: number;
   }
 
-  export class Java implements Subject {
-    teacher: Teacher;
-
-    setTeacher(teacher: Teacher): void {
-      this.teacher = teacher;
-    }
+  export class Java extends Subject {
     getRequirements(): string {
       return "Here is the list of requirements for Java";
     }
